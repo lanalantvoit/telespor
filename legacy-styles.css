@@ -1,0 +1,143 @@
+body {
+    background: #4D7732;
+    background: linear-gradient(180deg, rgba(77,119,50,1) 0%, #709529 100%)
+}
+
+.table-container {
+    position: relative;
+    margin: 0 auto;
+    padding: 20px; 
+    background-color: #F4F5F5; 
+    border: 1px solid #F4F5F5; 
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+    width: 100%; 
+    overflow-x: auto;
+}
+
+.table-container h2 {
+    margin-top: 10px; 
+    text-align: center; 
+    text-transform: uppercase; 
+    font-family: 'Inter', sans-serif;
+    font-weight: bold; 
+    font-size: 28px; 
+    color: #4D7732; 
+
+}
+
+.icon-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.icon-button:hover {
+    color: #4D7732;
+}
+
+.table-wrapper {
+    width: max-content; /* The width of the container is equal to the width of its contents */
+    margin: 0 auto;
+    max-width: 100%; 
+    overflow-x: auto; 
+}
+
+.tg {
+    border-collapse: collapse;
+    margin: 15px auto;
+    border-spacing: 0;
+    table-layout: fixed;
+    max-width: 100%; 
+    width: auto; 
+}
+
+.tg th,
+.tg td {
+    border: 2px solid #f2f2f2;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    overflow: hidden;
+    padding: 10px 15px;
+    word-break: normal;
+}
+
+th, .title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.odd {
+    background-color: #F4F8F5;
+}
+
+.even, .gen-name {
+    background-color: #FFFFFF;
+}
+
+.description {
+    font-size: 12px;
+}
+
+a {
+    color: #EB5A26;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #83AD68;
+}
+
+.bell-image {
+    width: 150px;
+    height: 130px;
+}
+
+/* Styles for the first column */
+
+.tg th:first-child,
+.tg td:first-child {
+    position: sticky;
+    left: -2px;
+    background-color: #fbfffb;
+    z-index: 1; 
+}
+
+/* Styles for first column headings */
+.tg th:first-child {
+    font-weight: bold;
+}
+
+/* Responsive styles */
+
+
+/* For large screens */
+@media screen and (min-width: 1200px) {
+    .table-container {
+        width: 1200px; /* Fixed width for large screens */
+    }
+}
+
+/* For smaller screens */
+@media screen and (max-width: 1200px) {
+    .table-container {
+        width: 95%; /* Almost full screen width for smaller screens */
+    }
+}
+
+
+/* For mobil */
+
+@media screen and (max-width: 600px) {
+    .tg th,
+    .tg td {
+        font-size: 12px; /* Reduce text size for smaller screens */
+        padding: 8px; /* Adjust cell padding */
+    }
+}
+
+
